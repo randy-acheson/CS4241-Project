@@ -56,7 +56,7 @@ function setup() {
 	playPause.addEventListener("click", playPauseClick, false);
 	secretSquare.addEventListener("click", clickSecretSquare, true);
 	dBody.addEventListener("mousemove", mouseMove, false);
-	//window.addEventListener("resize", changeTableHeight);
+	window.addEventListener("resize", changeTableHeight);
 
 	for(i = 0; i < squares.length; i++) {
 		squares[i].oncontextmenu = function (e) {
