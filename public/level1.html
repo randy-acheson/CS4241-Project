@@ -1,0 +1,44 @@
+<html lang="en">
+  <head>
+    <title>Level 1</title>
+    <meta charset="utf-8">
+    
+    <script src="scripts/underscore.js" type="text/javascript"></script>
+    <script src="scripts/templates.js" type="text/javascript"></script>
+    <script src="scripts/eventScript.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+    <!-- Author: Randy Acheson -->
+    <!-- URL: https://jracheson-assignment7.herokuapp.com/ -->
+  </head>
+
+  <body>
+    <header id="pageHeader"> Find the special square! </header>
+    <div id="subtitle"> Use the audio and visual clues to click on the hidden square. </div>
+
+    <div id="stopContainer">
+      <img id="playPause" src="assets/pause_icon.png"/>
+    </div>
+
+    <audio id="audio" src="assets/staying_alive.mp3" loop> Your browser does not support the <code>audio</code> element. </audio>
+
+    <table id="squaresTable">
+      <tbody id="squaresTbody">
+      </tbody>
+    </table>
+
+  <footer id="footsies">
+    Randy Acheson<br>Worcester Polytechnic Institute<br>Class of 2016
+  </footer>
+  </body>
+
+
+</html>
+
+<script>
+buildTable(10, false);
+</script>
+
