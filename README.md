@@ -1,6 +1,6 @@
->*Joseph Acheson
-Assignment 7
-https://jracheson-assignment7.herokuapp.com/
+>#Joseph Acheson
+>Assignment 7
+>https://jracheson-assignment7.herokuapp.com/
 
 Theming Choices
 ------
