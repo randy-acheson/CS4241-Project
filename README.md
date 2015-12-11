@@ -1,6 +1,6 @@
->#Joseph Acheson
->Assignment 7
->https://jracheson-assignment7.herokuapp.com/
+#CS4241 Webware: Assignment 7
+>Found at: https://jracheson-assignment7.herokuapp.com/
+Joseph Acheson
 
 Theming Choices
 ------
