@@ -7,6 +7,7 @@ var playPauseSwitch;
 var counter;
 var squares;
 var secretSquare;
+var originalTableSize;
 
 
 function buildTable(numSquaresPerRow, alternateShapes) {
@@ -38,6 +39,9 @@ function buildTable(numSquaresPerRow, alternateShapes) {
 	var tBody = document.getElementById('squaresTbody');
 	tBody.innerHTML = templ_table({rows});
 
+	var table = document.getElementById('squaresTable');
+	originalTableSize = table.clientHeight * 2;
+	
 	changeTableHeight();
 
 	setup();
@@ -174,8 +178,14 @@ function changeTableHeight() {
 	
 	var tableWidth = table.clientHeight * 2;
 
-	if (tableWidth > (window.innerWidth * 0.8) ) {
-		tableWidth = window.innerWidth * 0.8;
+	if (originalTableSize > (window.innerWidth * 0.8)) {
+
+		if (tableWidth > (window.innerWidth * 0.8) ) {
+			tableWidth = window.innerWidth * 0.8;
+		}
+	}
+	else if (tableWidth > originalTableSize) {
+		tableWidth = originalTableSize;
 	}
 
 	table.style.width = tableWidth;
